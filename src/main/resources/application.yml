@@ -7,10 +7,41 @@ eureka:
     register-with-eureka: true
     service-url:
       defaultZone: http://localhost:8761/eureka
+
+  instance:
+    prefer-ip-address: true
+
 spring:
   cloud:
     config:
-      uri:
-        -
+      import-check:
+        enabled: false
+      server:
+        git:
+          uri: https://github.com/kamragaurav1206/microservice-config-server
+          username: kamragaurav1206
+          password: Oldpoll@22
+          clone-on-start: true
+          skipSslValidation: true
+        encrypt:
+          enabled: false
+  application:
+    name: CONFIG-SERVER
+  security:
+    user: kamragaurav1206
+    password: Oldpoll@22
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
