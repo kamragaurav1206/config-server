@@ -19,8 +19,6 @@ spring:
       server:
         git:
           uri: https://github.com/kamragaurav1206/microservice-config-server
-          username: kamragaurav1206
-          password: Oldpoll@22
           clone-on-start: true
           skipSslValidation: true
         encrypt:
